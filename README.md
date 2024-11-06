@@ -12,3 +12,11 @@ Functionality: Handle, +, -, *, /, %, **, parentheses, and error messages.
 Non-functional: User interface, usability, and performance
 
 Project Part 3 - Software Architecture Design
+The following is a short introduction to our document as a whole:
+
+Purpose: Define the architecture of the program being made.
+Scope: To guide a reader in the design of the architecture of our program.
+
+Architecture: Hierarchical logic architecture is defined with goals and classes.
+Interface: Example what the interface may look like with examples of valid and invalid inputs.
+Quality: Handling invalid inputs, error checking, and watching for vulnerabilities in the code.
