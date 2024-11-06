@@ -10,3 +10,5 @@ User Characteristics: Basic arithmetic knowledge required.
 
 Functionality: Handle, +, -, *, /, %, **, parentheses, and error messages.
 Non-functional: User interface, usability, and performance
+
+Project Part 3 - Software Architecture Design
