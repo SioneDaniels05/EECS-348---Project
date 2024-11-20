@@ -1,0 +1,61 @@
+//Code Snippets
+#include <iostream>
+#include <stdexcept>
+
+class CalculatorEngine {
+public:
+    static double add(double a, double b) {
+        return a + b;
+    }
+
+    static double subtract(double a, double b) {
+        return a - b;
+    }
+
+    static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    static double divide(double a, double b) {
+        if (b == 0) {
+            throw std::invalid_argument("Division by zero is undefined.");
+        }
+        return a / b;
+    }
+};
+
+int main() {
+    std::cout << "2 + 3 = " << CalculatorEngine::add(2, 3) << std::endl;
+    std::cout << "10 / 2 = " << CalculatorEngine::divide(10, 2) << std::endl;
+    return 0;
+}
+
+
+
+//Test Cases
+#include <cassert>
+#include <iostream>
+
+void testCalculatorEngine() {
+    // Test addition
+    assert(CalculatorEngine::add(2, 3) == 5);
+    // Test subtraction
+    assert(CalculatorEngine::subtract(10, 5) == 5);
+    // Test multiplication
+    assert(CalculatorEngine::multiply(4, 5) == 20);
+    // Test division
+    assert(CalculatorEngine::divide(10, 2) == 5);
+    // Test division by zero
+    try {
+        CalculatorEngine::divide(10, 0);
+        assert(false); // Should not reach this line
+    } catch (const std::invalid_argument& e) {
+        assert(true); // Expected exception
+    }
+    std::cout << "All tests passed!" << std::endl;
+}
+
+int main() {
+    testCalculatorEngine();
+    return 0;
+}
