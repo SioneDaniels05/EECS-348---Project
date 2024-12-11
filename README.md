@@ -25,6 +25,7 @@ Quality: Handling invalid inputs, error checking, and watching for vulnerabiliti
 The following is a short introduction to the documents as a whole:
 
 Implementation:
+  Purpose: Writing/adding main code to GitHub, along with submitting GitHub repository link
 
 Test Cases:
 
