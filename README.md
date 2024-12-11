@@ -32,3 +32,4 @@ Test Cases:
   Scope: To guide the reader in the possible uses and abilities of the calculator application
   
 User Manual:
+The purpose of this User Manual is to help the user understand how to handle and run the program. It will contain information on how to properly format inputs, setting up and compiling the program, troubleshooting errors, and a glossary of information.
