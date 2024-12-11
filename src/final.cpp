@@ -45,7 +45,7 @@ bool isNumber(const string& s) {
     if (s[i] == '-') i++; // Allow negative sign
     
     bool hasDecimal = false;
-    bool hasDigit = false; // New flag to ensure we have at least one digit
+    bool hasDigit = false; // Ensures we have at least one digit
     
     for (; i < s.size(); i++) {
         if (s[i] == '.') {
@@ -58,7 +58,7 @@ bool isNumber(const string& s) {
         }
     }
     
-    // Must have at least one digit to be a valid number
+    // Must have a minumum of one digit to be a valid number 
     return hasDigit;
 }
 
@@ -108,18 +108,18 @@ vector<string> tokenize(const string& expr) {
         }
     }
 
-    if (!num.empty()) tokens.push_back(num); // Add any remaining number
+    if (!num.empty()) tokens.push_back(num); // Add remaining numbers
     return tokens;
 }
 
-// Function to convert infix to postfix notation
+// Function to convert infix to postfix 
 vector<string> infixToPostfix(const vector<string>& tokens) {
     vector<string> postfix;
     stack<string> operators;
 
     for (const string& token : tokens) {
         if (isNumber(token)) {
-            postfix.push_back(token); // Numbers go directly to the output
+            postfix.push_back(token); // Numbers go to the output
         } else if (token == "(") {
             operators.push(token);
         } else if (token == ")") {
