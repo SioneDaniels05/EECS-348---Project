@@ -178,6 +178,12 @@ void parseAndEvaluate(const string& expr) {
         cerr << "Error: " << e.what() << endl;
     }
 }
+// Handles unary operators
+double evaluateUnary(const string& token, double value) {
+    if (token == "+") return value;
+    if (token == "-") return -value;
+    
+}
 
 // Main driver function
 int main() {
