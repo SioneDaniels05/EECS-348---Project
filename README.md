@@ -1,4 +1,4 @@
-Project Part 2 - Software Requirements Specifications
+**Project Part 2 - Software Requirements Specifications**
 The following is a short introduction to our document as a whole:
 
 Purpose: Define the calculator's behavior, constraints and operations.
@@ -11,7 +11,7 @@ User Characteristics: Basic arithmetic knowledge required.
 Functionality: Handle, +, -, *, /, %, **, parentheses, and error messages.
 Non-functional: User interface, usability, and performance
 
-Project Part 3 - Software Architecture Design
+**Project Part 3 - Software Architecture Design**
 The following is a short introduction to our document as a whole:
 
 Purpose: Define the architecture of the program being made.
@@ -20,3 +20,15 @@ Scope: To guide a reader in the design of the architecture of our program.
 Architecture: Hierarchical logic architecture is defined with goals and classes.
 Interface: Example what the interface may look like with examples of valid and invalid inputs.
 Quality: Handling invalid inputs, error checking, and watching for vulnerabilities in the code.
+
+**Project Part 4,5,6 - Implementation, Test Cases, and User Manual**
+The following is a short introduction to the documents as a whole:
+
+Implementation:
+
+Test Cases:
+
+  Purpose: The purpose of this Test Case Specification Document for the EECS –348 Calculator application defines numerous test cases that check the application’s ability to handle basic, established functionalities of a typical calculator.
+  Scope: To guide the reader in the possible uses and abilities of the calculator application
+  
+User Manual:
